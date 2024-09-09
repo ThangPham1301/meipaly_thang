@@ -1,0 +1,36 @@
+#contact{
+    padding: 10rem;
+}
+.contact__container{
+    max-width: 120rem;
+    margin: auto;
+
+}
+#contact .contact__content{
+    display: flex;
+    gap: 1rem;
+}
+.contact__content iframe{
+    width: 60%;
+}
+.contact__content form{
+    width: 40%;
+    display: flex;
+    flex-direction: column ;
+    gap: 4rem;
+}
+.contact__container .username,
+.contact__content .email{
+    width: 100%;
+    padding: 1.6rem 1.2rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    outline: 2px solid blue;
+}
+.contact__content textarea{
+    resize: vertical;
+    min-height: 50rem;
+}
+
+
+

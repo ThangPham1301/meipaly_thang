@@ -1,0 +1,11 @@
+/* 
+   Độ ưu tiên trong CSS
+    ID:100
+    class:10
+    tag:1
+- Nếu 2 selector có điểm bằng nhau thì nằm dưới sẽ đè lên nằm trên.
+*/
+@media screen and (max-width: 400px){  /* code responsive cho màn hình*/
+    /* max-width:400px :::màn hình <400px thì sẽ ăn những bộ selector bên trong> */
+    /*luôn luôn đặt responsive màn hình từ lớn đến bé, tức là lớn trên bé dưới*/
+    /* laptop -> tablet -> mobile */

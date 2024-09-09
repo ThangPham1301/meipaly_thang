@@ -1,0 +1,25 @@
+.number__wrapper{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#numbers{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: black;
+    
+}
+#numbers .number_item .num{
+    font-size:6rem;
+    margin: 0;
+}
+
+#numbers .number_item .text{
+    font-size: 10rem;
+
+}
+.number_item{
+    width: 20rem;
+}

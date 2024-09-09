@@ -1,0 +1,71 @@
+#carousel{
+    justify-content: center;
+    background-image: url(../../Public/img/home_slider.jpg);
+    align-items: center;
+    background-size: cover; /* căng giữa*/
+    background-position: center;
+    height: 70rem; /* để hiện hình lên trên trình duyệt vì phụ thuộc html, mà html chưa có kích thước*/
+    display: flex;
+
+}
+button{
+    cursor: pointer;
+}
+.carousel__content{
+    padding: 1px 0;
+    text-align: center;
+}
+.carousel__desc{
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    transition: all 0.3s linear;
+}
+.carousel__title{
+    font-size: 7.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    transition: all 0.3s linear;
+}
+.carousel__btn{
+    font: size 1.6rem; 
+    color: white;
+    text-transform: uppercase;
+    background-color: #E62B4A;
+    border: none;
+    padding: 1.5rem 2.5rem;
+    transition: all 0.3s linear;
+    will-change: backround-color color;/* giúp đỡ trình duyệt chuẩn bị tinh thần chuyển đổi animation cho mượt mà, tránh lag*/
+    border-radius: .5rem;
+}
+.carousel__btn:hover{
+    background-color:#AF2239;
+}
+.carousel__desc:hover + h1{ /* cùng cấp thì phải có thêm dấu cộng*/
+    color: red;
+}
+.carousel__desc:hover + *{ /* hover tất cả các phần tử ngay sau nó*/
+    color: green;
+}
+.carousel__title:hover{
+    background-color: red;
+}
+.row{
+    animation-name: row;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin-top: 50px;
+    font-size: 30px;
+}
+@keyframes row{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+}

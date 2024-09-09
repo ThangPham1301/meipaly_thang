@@ -1,0 +1,56 @@
+footer{
+    padding:  10rem;
+    margin: auto;
+    background-color: black;
+
+}
+footer .container{
+    max-width: 144rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer__icon a i{ 
+    width: 5rem;
+    height: 5rem;
+   background-color: #333333;
+   color: white;
+    border-radius: 50%;
+    text-align: center; 
+     line-height: 5rem; /*bằng kích thước của thnawgf width*/
+     transition: background-color 0.3s linear;
+}
+.footer__content{
+    color: white;
+    font-size: 1.3rem;
+}
+.footer__icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footer__icon a i:hover{
+    background-color: #E62B4A;
+}
+.back-to-top{
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: .6rem;
+    color: white;
+    background-color: #333333;
+    text-align: right;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    /* opacity: 0;  */
+    /*không triệt để*/
+    /*cách làm triệt để hơn  */
+    visibility: hidden;
+}
+.cd-top--is-visible{
+    /* opacity: 1; */
+    visibility: visible;
+}
+

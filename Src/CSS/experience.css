@@ -1,0 +1,17 @@
+#experience{
+    padding: 1px;
+    background-image: url(../../Public/img/bussiness_img_1.jpg);
+    background-attachment: fixed;
+    text-align: center;
+}
+.experience__video{
+    margin: 0 4rem;
+}
+.experience__video video{
+    width: 100%;
+    display: block;    
+}
+#experience h2{
+    font-size: 6rem;
+    margin: 0;
+}

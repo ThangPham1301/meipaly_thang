@@ -1,0 +1,88 @@
+#services{
+    padding: 9rem;
+    background-color: black;
+}
+.services__content{
+    text-align: center;
+}
+/* để tìm và thay đổi cho thẻ có thuộc tính giống nhau trong cùng 1 thẻ cha */
+/* .services__content p:nth-of-type(1){
+    color: red;
+}
+.services__content p:nth-of-type(2){
+    color: green;
+}
+.services__content h2:nth-of-type(1){
+    color: blue;
+} */
+/* để tìm và thay đổi cho thẻ trong cùng 1 thẻ cha  */
+/* .services__content p:nth-child(3){
+    color :blue;
+} */
+.services__desc{
+    font-size: 1.4rem;
+    color: #E61B18;
+    font-weight: 500;
+    letter-spacing: .3rem;
+ }
+.services__title{
+    font-size: 5rem;
+    font-weight: 500;
+    color: white;
+}
+.services__sub{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #888888;
+    letter-spacing: .3rem;
+}
+.services__slider{
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1rem;
+}
+.slider__item{
+    background-color: white;
+    color: black;
+    width: 12rem;
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider__item p{
+    margin: 0;
+}
+.slider__item{
+    position: relative;
+}
+.no-name{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: .4rem;
+    height: 0px;
+    background-color: red;
+    transition: all 0.3s linear;
+} 
+ .slider__item:hover .no-name{
+    height: 100%;
+} 
+.slider__item::after{
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    width: .4rem;
+    height: 0px;
+    background-color: red;
+    transition: all 0.3s linear;
+}
+.slider__item:hover::after{
+    background-color: green;
+}
